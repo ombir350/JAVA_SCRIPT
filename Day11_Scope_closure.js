@@ -69,7 +69,7 @@ let balance = 500;
 
 
 
-// // balance+="ombir";
+// // balance+="Rohit";
 // balance-=500;
 // console.log(balance);
 
@@ -95,9 +95,9 @@ let user = {
     
 }
 
-balance="ombir"
+balance="Rohit"
 
-user.balance="ombir";
+user.balance="Rohit";
 console.log(user.getBalance());
 console.log(user.deposit("2sa00"));
 console.log(user.deposit(500));
