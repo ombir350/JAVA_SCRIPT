@@ -25,7 +25,7 @@
 //     console.log(name1,name2);
 // }
 
-// greet("Rohit","Mohit");
+// greet("ombir","Mohit");
 
 // document.getElementById("first");
 // console.log(globalThis);
@@ -53,7 +53,7 @@
 // }
 
 // const user = {
-//     name:"Rohit",
+//     name:"ombir",
 //     age:30,
 // }
 
@@ -94,9 +94,9 @@
 //     }
 // }
 
-// // this = {name:"Rohit", age:20}
+// // this = {name:"ombir", age:20}
 
-// const p1 = new Person("Rohit",20);
+// const p1 = new Person("ombir",20);
 
 // console.log(p1);
 
@@ -121,7 +121,7 @@
 // // 'use strict'
 
 // const user = {
-//     name:"Rohit",
+//     name:"ombir",
 //     greet: function(){
 //         // console.log(this);
 //         const that = this;
@@ -132,7 +132,7 @@
 //     }
 // }
 
-// user.greet();
+user.greet();
 
 
 
@@ -149,41 +149,41 @@
 //     }
 // }
 
-// const stopWatch = {
-//     second:0,
-//     start: function(){
-//          console.log(this);
-//         setInterval(()=>{
-//             this.second++;
-//             console.log(this.second);
-//         },1000)
-//     }
-// };
+const stopWatch = {
+    second:0,
+    start: function(){
+         console.log(this);
+        setInterval(()=>{
+            this.second++;
+            console.log(this.second);
+        },1000)
+    }
+};
 
-// stopWatch.start();
-// 'use strict'
+stopWatch.start();
+'use strict'
 
-// console.log(this);
-
-
-// const user = {
-//     name:"Rohit",
-//     greet: ()=>{
-//         console.log(this);
-//     }
-// }
+console.log(this);
 
 
+const user = {
+    name:"ombir",
+    greet: ()=>{
+        console.log(this);
+    }
+}
 
-// user.greet();
 
 
-// const button = document.getElementById("first");
+user.greet();
 
 
-// button.addEventListener('click',()=>{
-//     console.log(this);
-// })
+const button = document.getElementById("first");
+
+
+button.addEventListener('click',()=>{
+    console.log(this);
+})
 
 
 
@@ -197,9 +197,9 @@
 
 // arrow function: It takes this from its lexical enoviroment scope
 
-// 'use strict'
-// function greet(){
-//     console.log(this);
-// }
+'use strict'
+function greet(){
+    console.log(this);
+}
 
-// greet();
+greet();
